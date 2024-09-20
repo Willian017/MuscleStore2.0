@@ -1,0 +1,236 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: black;
+    height: 15vh;
+
+    img
+    {
+        height: 10vh;
+    }
+}
+
+#header-div
+{
+    display: flex;
+    justify-content: space-around;
+    width: 50vw;
+
+    input[type="text"]
+    {
+        border-radius: 20px;
+        border: none;
+        padding: 10px 5px;
+        height: 6vh;
+    }
+
+    input[type="submit"]
+    {
+        text-align: center;
+        height: 6vh;
+        width: 5vw;
+        background-color: red;
+        border:none;
+        color: white;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+}
+
+nav
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 10vh;
+    border: 3px solid black;
+
+    a
+    {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+    }
+
+    a:hover
+    {
+        text-decoration: underline 2px;
+    }
+}
+
+#carrosel-inico
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url(1.png) no-repeat;
+    background-size: cover;
+}
+
+#Aux-carrosel-inico
+{
+    height: 60vh;
+}
+
+#botao-carrosel
+{
+    margin-bottom: 5vh;
+    button
+    {
+        width: 8vw;
+        height: 15px;
+        cursor: pointer;
+        border: 1px solid black;
+        border-radius: 10px;
+        margin: 10px;
+        background-color: red;
+    }
+}
+
+#img-inicio
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 8vh 0;
+
+    img
+    {
+        width: 40vw;
+        height: 40vh;
+        border-radius: 20px;
+    }
+}
+
+#texto-produtos
+{
+    height: 15vh;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h1
+    {
+        color: white;
+    }
+}
+
+#carrosel-produtos
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 10vh 0;
+}
+
+.produtos-carrosel
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 1px rgb(180, 179, 179);
+    width: 20vw;
+    height: 50vh;
+    //border: 1px solid black;
+
+    img
+    {
+        height: 20vh;
+        width: 10vw;
+        margin-bottom: 10px;
+        border-radius: 10px;
+    }
+
+    h1
+    {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+
+    h2
+    {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    button
+    {
+        background-color: red;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        width: 110px;
+        margin-top: 10px;
+        height: 50px;
+        cursor: pointer;
+    }
+}
+
+#opinioes
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+}
+
+#carrosel-opinioes
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#opinioes-carrosel
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@media screen and (max-width:1000px) {
+    header
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 20vh;
+    }
+
+    #img-header
+    {
+        height: 13vh;
+    }
+
+    #header-div
+    {
+        display: none;
+    }
+
+    form
+    {
+        display: none;
+    }
+
+    nav
+    {
+        display: none;
+    }
+}
